@@ -1,0 +1,150 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--surface2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+}
+
+.diff {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.counter {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.progressBar {
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.question {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.3px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ansBtn {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: all 0.15s;
+  line-height: 1.4;
+}
+
+.ansBtn:hover:not(:disabled) {
+  border-color: var(--accent2);
+  background: rgba(196, 168, 255, 0.08);
+}
+
+.correct {
+  border-color: var(--correct) !important;
+  background: rgba(74, 222, 128, 0.08) !important;
+  color: var(--correct) !important;
+}
+
+.incorrect {
+  border-color: var(--incorrect) !important;
+  background: rgba(248, 113, 113, 0.08) !important;
+  color: var(--incorrect) !important;
+}
+
+.dimmed {
+  opacity: 0.4;
+}
+
+.feedback {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.correct_text {
+  color: var(--correct);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.incorrect_text {
+  color: var(--incorrect);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nextBtn {
+  padding: 0.65rem 1.25rem;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.nextBtn:hover {
+  opacity: 0.85;
+}
